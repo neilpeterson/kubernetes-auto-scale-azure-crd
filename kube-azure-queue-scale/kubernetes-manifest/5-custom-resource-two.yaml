@@ -1,0 +1,16 @@
+# Custom Resource
+# Defines Azure Queue connection info, deployment to scale, and scale threshold.
+# curl localhost:8001/apis/nepeters.com/v1/namespaces/default/azurequeues
+
+apiVersion: "apex-sample.com/v1"
+kind: AzureQueue
+metadata:
+  name: azure-vote-front
+spec:
+  AZURESTORAGEACCT: kubeazurequeue
+  AZUREQUEUE: kubeazurequeue
+  AZUREQUEUEKEY: 
+  QUEUELENGTH: 10
+  MIN_REPLICA: 1
+  MAX_REPLICA: 3
+  DEPLOYMENTNAME: azure-vote-front

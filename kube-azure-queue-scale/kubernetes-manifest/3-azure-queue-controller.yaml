@@ -1,0 +1,19 @@
+# Custom Resource Controller:
+# Looks for new instances of resource and scales target deployment accordingly.
+
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: kube-azure-queue-controller
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kube-azure-queue-controller
+    spec:
+      containers:
+      - name: kubectl-sidecar
+        image: neilpeterson/kubectl-proxy-sidecar
+      - name: kube-azure-queue-controller
+        image: neilpeterson/azure-queue-controller
