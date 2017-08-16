@@ -26,7 +26,7 @@ spec:
 In the custom resource, you must provide the following information.
 
 | Property | Description |
-|---|---|---|
+|---|---|
 | AZURESTORAGEACCT | Name of Azure storage account. |
 | AZUREQUEUE | Name of Azure Queue. |
 | AZUREQUEUEKEY | Access key for the Azure Storage account. |
