@@ -17,7 +17,7 @@ while True:
         print('Could not connect to: ' + CUSTOM_RESOURCE_DEF + ' API. Program will exit.')
         sys.exit(1)
     
-    # Log If API is accessible hoever CRD not found.
+    # Log If API is accessible however CRD not found.
     # If CRD is found, load response JSON.
     if RESPONSE.status_code != 200:
         print("Could not find Azure Queue resource definition: " + CUSTOM_RESOURCE_DEF)
