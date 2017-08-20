@@ -9,7 +9,7 @@ metadata:
 spec:
   AZURESTORAGEACCT: kubeazurequeue
   AZUREQUEUE: kubeazurequeue
-  AZUREQUEUEKEY:
+  AZUREQUEUEKEY: <replace>
   QUEUELENGTH: 10
   MIN_REPLICA: 5
   MAX_REPLICA: 20
