@@ -28,7 +28,6 @@ client = document_client.DocumentClient(COSMOS_DB_ENDPOINT, {'masterKey': COSMOS
 # Initialize Cosmos DB
 def cosmosdb():
 
-    # Quick hack - fix up proper
     # Check for database
     try:
         db = next((data for data in client.ReadDatabases() if data['id'] == COSMOS_DB_DATABASE))
@@ -36,7 +35,6 @@ def cosmosdb():
     except:
         db = client.CreateDatabase({'id': COSMOS_DB_DATABASE})
 
-    # Quick hack - fix up proper
     # Check for collection
     try:
         collection = next((coll for coll in client.ReadCollections(db['_self']) if coll['id'] == COSMOS_DB_COLLECTION))
@@ -91,7 +89,6 @@ while True:
         print(queue_length)
         print(replica_count)
 
-        # print('{"queue":' + str(queue_length) + ',"replica": ' + str(replica_count) + '}')
         add_value_cosmosdb(queue_length,replica_count)
 
-    time.sleep(10)
+    time.sleep(1)

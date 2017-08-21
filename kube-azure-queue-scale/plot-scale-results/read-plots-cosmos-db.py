@@ -18,6 +18,3 @@ docs = client.ReadDocuments(coll['_self'])
 
 for doc in docs:
     print("Queue Length " + str(doc['queue_length']) + "--- Replica Count " + str(doc['replica_count']))
-    
-    #print(doc['message'] + ' ====== Sentiment ' + str(doc['sentiment']))
-
