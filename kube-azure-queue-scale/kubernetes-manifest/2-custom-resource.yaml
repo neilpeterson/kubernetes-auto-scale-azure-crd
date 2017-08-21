@@ -11,6 +11,6 @@ spec:
   AZUREQUEUE: kubeazurequeue
   AZUREQUEUEKEY: <replace>
   QUEUELENGTH: 10
-  MIN_REPLICA: 5
-  MAX_REPLICA: 20
+  MIN_REPLICA: 1
+  MAX_REPLICA: 3
   DEPLOYMENTNAME: process-tweet
