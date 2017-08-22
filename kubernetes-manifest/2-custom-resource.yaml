@@ -1,6 +1,6 @@
 # Custom Resource
 # Defines Azure Queue connection info, deployment to scale, and scale threshold.
-# curl localhost:8001/apis/nepeters.com/v1/namespaces/default/azurequeues
+# curl localhost:8001/apis/apex-sample.com/v1/namespaces/default/azurequeues
 
 apiVersion: "apex-sample.com/v1"
 kind: AzureQueue
