@@ -14,19 +14,12 @@ queue_service = QueueService(account_name=AZURE_STORAGE_ACCT, account_key=AZURE_
 int = 0
 
 # Add random number of messages to queue
-while True:
-    message_number = randint(5,20)
+message_number = randint(10,10)
 
-    print('New Message ' + str(message_number))
-    print('start ' + str(int))
-    int += message_number
-    print('Sum: ' + str(int))
+while message_number > 0:    
+    
+    queue_service.put_message(AZURE_QUEUE, "Kubernetes is so much fun...")
+    message_number = message_number - 1
 
-    while message_number > 0:    
-        
-        queue_service.put_message(AZURE_QUEUE, str(message_number))
-        message_number = message_number - 1
-
-    print("Sleep...")            
-    time.sleep(10)
+print("Done...")
         
