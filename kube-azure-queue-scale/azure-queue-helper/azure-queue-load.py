@@ -14,7 +14,7 @@ queue_service = QueueService(account_name=AZURE_STORAGE_ACCT, account_key=AZURE_
 int = 0
 
 # Add random number of messages to queue
-message_number = randint(10,10)
+message_number = randint(50,100)
 
 while message_number > 0:    
     

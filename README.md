@@ -1,6 +1,6 @@
 # Azure Queue Scale Controller for Kubernetes
 
-This Custom Resource Definition plus controller auto-scales Kubernetes deployments based on the queue length of an Azure Queue.
+This Custom Resource Definition plus controller auto-scales Kubernetes deployments based on the queue length of an Azure Queue..
 
 ## Custom Resource Definition
 
