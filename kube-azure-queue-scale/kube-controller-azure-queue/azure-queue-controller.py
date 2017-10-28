@@ -1,6 +1,7 @@
 from azure.storage.queue import QueueService
 import json
 import math
+import kubernetes
 import os
 import requests
 import sys
