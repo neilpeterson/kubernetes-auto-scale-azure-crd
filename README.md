@@ -2,6 +2,12 @@
 
 This Custom Resource Definition plus controller auto-scales Kubernetes deployments based on the queue length of an Azure Queue..
 
+## Video Demonstration
+
+See the following repo / application demonstration to see the pod-autoscaler in action.
+
+https://github.com/neilpeterson/twitter-sentiment-for-kubernetes
+
 ## Custom Resource Definition
 
 ```
